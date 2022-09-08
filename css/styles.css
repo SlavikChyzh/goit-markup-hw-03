@@ -1,0 +1,258 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --link-color: #2196f3;
+  --contact-color: #757575;
+  --main-color: #212121;
+  --footer-color: #ffffff;
+  --description-color: #757575;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+/*hidden-teg*/
+.visually-hidden {
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+}
+
+.container {
+  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*logo*/
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--link-color);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+header .studio-color {
+  color: #000000;
+}
+
+/*link*/
+.link {
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--link-color);
+}
+
+.page-header .container {
+  display: flex;
+}
+.navigation {
+  display: flex;
+}
+.page-header .navigation .active {
+  color: var(--link-color);
+}
+.page-header .logo-link {
+  margin-top: 35px;
+}
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.header-navigation {
+  display: flex;
+}
+.header-cont .contacts {
+  display: flex;
+}
+
+/*tell & mail*/
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+}
+
+.hero {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.hero-header {
+  box-sizing: border-box;
+
+  margin: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 280px;
+  margin-left: 452px;
+  width: 600px;
+  height: 140px;
+}
+
+.hero-button-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.35;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  color: var(--footer-color);
+  cursor: pointer;
+}
+.hero-button-link:hover,
+.hero-button-link:focus {
+  background-color: #188ce8;
+  color: var(--footer-color);
+}
+
+/*advantage*/
+
+.advantage-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantage-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+
+/*Team*/
+.team-cont {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: #f5f4fa;
+  outline: solid red;
+}
+
+.name-of-employee {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.position-on-team {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
+
+footer {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 252px;
+  margin: 0 auto;
+}
+
+footer address {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+
+footer .studio-color {
+  color: var(--footer-color);
+}
+
+footer .contacts {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.block-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*button*/
+.button-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  cursor: pointer;
+}
+
+.button-link:hover,
+.button-link:focus {
+  background-color: var(--link-color);
+  color: var(--footer-color);
+}
+
+/*portfolio works*/
+.name-of-work {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.type-of-work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
+}
