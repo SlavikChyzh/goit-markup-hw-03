@@ -17,7 +17,7 @@
 
 <body>
   <!--Header-->
-  <header class="page-heade">
+  <header class="page-header">
     <div class="container">
       <nav class="navigation">
         <a href="./index.html" class="logo-link"><span lang="en">Web<span class="studio-color">Studio</span></span></a>
@@ -46,41 +46,43 @@
 
   <main>
     <!--Hero Section-->
-    <section class="hero">
-      <h1 class="hero-header">
-        Ефективні рішення для вашого бізнесу
-      </h1>
-      <button class="hero-button-link" type="button">
-        Замовити послугу
-      </button>
+    <section class="hero ">
+      <div>
+        <h1 class="hero-header">
+          Ефективні рішення для вашого бізнесу
+        </h1>
+        <button class="hero-button-link" type="button">
+          Замовити послугу
+        </button>
+      </div>
     </section>
 
     <!--Section Our Аdvantages-->
     <section class="advantages">
-      <div class="container">
+      <div class="container section">
         <h2 class="block-head visually-hidden">Переваги</h2>
-        <ul class="advantage list">
-          <li>
+        <ul class="advantage-list list">
+          <li class="advantage">
             <h3 class="advantage-name">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="advantage-description">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="advantage">
             <h3 class="advantage-name">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="advantage-description">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="advantage">
             <h3 class="advantage-name">ПЛАНУВАННЯ</h3>
             <p class="advantage-description">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="advantage">
             <h3 class="advantage-name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="advantage-description">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -93,14 +95,14 @@
 
     <!--Section What Do We Do-->
     <section class="we-do">
-      <div class="container">
+      <div class="container section">
         <h2 class="block-head">Чим ми займаємося</h2>
-        <ul class="list">
+        <ul class="we-do-list list">
           <li>
-            <img src="./images/box1.jpg" alt="Programing" width="370" />
+            <img class="we-do-img" src="./images/box1.jpg" alt="Programing" width="370" />
           </li>
           <li>
-            <img src="./images/box2.jpg" alt="Design" width="370" />
+            <img class="we-do-img" src="./images/box2.jpg" alt="Design" width="370" />
           </li>
           <li>
             <img src="./images/box3.jpg" alt="Drafting" width="370" />
@@ -111,43 +113,51 @@
 
     <!--Our Team-->
     <section class="team-cont">
-      <div class="container">
+      <div class="container section">
         <h2 class="block-head">Наша команда</h2>
         <ul class="team list">
           <li>
             <section class="team-employee">
               <img src="./images/team/team1.jpg" alt="Ігор Дем'яненко" width="270" />
-              <h3 class="name-of-employee">Ігор Дем'яненко</h3>
-              <p class="position-on-team" lang="en">
-                Product Designer
-              </p>
+              <div class="frame">
+                <h3 class="name-of-employee">Ігор Дем'яненко</h3>
+                <p class="position-on-team" lang="en">
+                  Product Designer
+                </p>
+              </div>
             </section>
           </li>
           <li>
             <section class="team-employee">
               <img src="./images/team/team2.jpg" alt="Ольга Рєпіна" width="270" />
-              <h3 class="name-of-employee">Ольга Рєпіна</h3>
-              <p class="position-on-team" lang="en">
-                Frontend Developer
-              </p>
+              <div class="frame">
+                <h3 class="name-of-employee">Ольга Рєпіна</h3>
+                <p class="position-on-team" lang="en">
+                  Frontend Developer
+                </p>
+              </div>
             </section>
           </li>
           <li>
             <section class="team-employee">
               <img src="./images/team/team3.jpg" alt="Микола Тарасов" width="270" />
-              <h3 class="name-of-employee">Микола Тарасов</h3>
-              <p class="position-on-team" lang="en">
-                Marketing
-              </p>
+              <div class="frame">
+                <h3 class="name-of-employee">Микола Тарасов</h3>
+                <p class="position-on-team" lang="en">
+                  Marketing
+                </p>
+              </div>
             </section>
           </li>
           <li>
             <section class="team-employee">
               <img src="./images/team/team4.jpg" alt="Михайло Єрмаков" width="270" />
-              <h3 class="name-of-employee">Михайло Єрмаков</h3>
-              <p class="position-on-team" lang="en">
-                UI Designer
-              </p>
+              <div class="frame">
+                <h3 class="name-of-employee">Михайло Єрмаков</h3>
+                <p class="position-on-team" lang="en">
+                  UI Designer
+                </p>
+              </div>
             </section>
           </li>
         </ul>
@@ -157,7 +167,7 @@
 
   <!--Footer-->
   <footer class="page-footer">
-    <div class="container">
+    <div class="container section">
       <h2 class="visually-hidden" id="#contacts">
         Контакти
       </h2>
