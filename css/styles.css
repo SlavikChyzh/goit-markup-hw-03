@@ -353,13 +353,14 @@ footer .logo-link {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 .button-sort:hover,
 .button-sort:focus {
   background-color: var(--link-color);
   color: var(--footer-color);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 25%);
 }
 
 /*portfolio works*/
