@@ -7,6 +7,11 @@ html {
   box-sizing: inherit;
 }
 
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
 :root {
   --link-color: #2196f3;
   --contact-color: #757575;
@@ -30,6 +35,8 @@ li {
 }
 img li {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -125,8 +132,8 @@ header .logo-link {
   align-items: center;
   margin-left: 93px;
 }
-.header-navigation > li {
-  margin-left: 50px;
+.header-navigation li:not(:last-child) {
+  margin-right: 50px;
 }
 
 /*tell & mail*/
@@ -147,7 +154,7 @@ header .contacts > li:not(:first-child) {
 
 .hero {
   background-color: #2f303a;
-  padding-bottom: 280px;
+  padding: 200px 0;
 }
 
 .hero-header {
@@ -161,7 +168,6 @@ header .contacts > li:not(:first-child) {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 280px;
   margin-bottom: 30px;
 }
 
@@ -253,7 +259,6 @@ header .contacts > li:not(:first-child) {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -266,13 +271,11 @@ header .contacts > li:not(:first-child) {
 .team-employee {
   width: 270px;
   background-color: var(--footer-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 25%);
 }
-.frame {
-  border-right: solid 1px var(--frame-color);
-  border-bottom: solid 1px var(--frame-color);
-  border-left: solid 1px var(--frame-color);
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+.team-frame {
+  padding: 20px 24px;
 }
 .position-on-team {
   font-weight: 400;
@@ -281,7 +284,6 @@ header .contacts > li:not(:first-child) {
   letter-spacing: 0.03em;
   color: var(--description-color);
   text-align: center;
-  padding-bottom: 30px;
 }
 
 footer {
@@ -337,7 +339,7 @@ footer .logo-link {
 .portfolio-button-sort {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .button-sort {
@@ -365,10 +367,19 @@ footer .logo-link {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.frame {
+  border-right: solid 1px var(--frame-color);
+  border-bottom: solid 1px var(--frame-color);
+  border-left: solid 1px var(--frame-color);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 20px 24px;
 }
 .portfolio-work {
   flex-basis: calc((100%) / 3);
-  padding: 10px;
+  margin: 15px;
 }
 .name-of-work {
   display: block;
