@@ -138,11 +138,6 @@ header .logo-link {
 
 /*tell & mail*/
 header .contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  color: var(--contact-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -150,6 +145,14 @@ header .contacts {
 }
 header .contacts > li:not(:first-child) {
   margin-left: 50px;
+}
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--contact-color);
+  padding: 32px 0;
 }
 
 .hero {
@@ -226,7 +229,7 @@ header .contacts > li:not(:first-child) {
 .advantage:not(:first-child) {
   margin-left: 30px;
 }
-.advantages .section {
+.advantages.section {
   padding-bottom: 0;
 }
 /*We do section*/
@@ -353,6 +356,8 @@ footer .logo-link {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
+}
+.portfolio-button-sort > li:nth-child(n + 2) {
   margin-left: 8px;
 }
 
